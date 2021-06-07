@@ -16,5 +16,10 @@ public class HelloController {
 		  model.addAttribute("msg", "Hello word 111");
 	    return "hello";
 	  }
+	  
+	  @RequestMapping(value = "/")
+		public String index() {
+			return "index";
+		}
 
 }
